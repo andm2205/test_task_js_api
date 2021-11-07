@@ -30,7 +30,7 @@ Request body: `{name: string, price: number, userId: number, statusCode: number,
 
 Позволяет удалить товар (изменить статус на 'Удалён') по параметру `id`
 
-Request body: `{id: number}`
+Request body: `{id: number, userId: number}`
 
 ### PUT /api/buy.product
 
