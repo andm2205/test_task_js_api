@@ -73,10 +73,9 @@
                         response = await fetch(`http://127.0.0.1:3003/api/get.product/${productId}`, {
                         method: "GET"})
                     }
-
                     var productList = document.getElementById('products-list')
-                    var prod = await response.json()
                     productList.innerHTML = ''
+                    var prod = await response.json()
                     for(var b = 0; b < prod.length; ++b)
                     {
                         var a = prod[b]
